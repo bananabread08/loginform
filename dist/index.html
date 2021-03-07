@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Accessible Form</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/dbf95a1966.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header"> 
+            <h2>Create Account</h2>
+        </div>
+        <form id="form" class="form-cont">
+            <div class="form-input">
+                <label for="email"> Email Address: </label>
+                <input type="email" id="email" placeholder="phoenixwright24@yahoo.com">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message.</small>
+            </div>
+            <div class="form-input">
+                <label for="country"> Country: </label>
+                <input type="field" id="country" placeholder="Japan">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message.</small>
+            </div>
+            <div class="form-input">
+                <label for="zip-code"> Zip Code: </label>
+                <input type="field" id="zip-code" placeholder="123456789">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-input">
+                <label for="password"> Password: </label>
+                <input type="password" id="password" minlength="8" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-input">
+                <label for="password-confirm"> Confirm Password: </label>
+                <input type="password" id="password-confirm" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div><button>Sign Up</button></div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
