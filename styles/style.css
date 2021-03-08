@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 body{
     background-color: teal;
@@ -47,9 +47,28 @@ body{
     padding: 5px;
     width: 100%;
 }
+.form-input sup{
+    color: #e63f2c;
+}
+/* */
+.form-input.success input{ /* style success input*/
+    border-color:  #3ac041;
+} 
+.form-input.error input{ /* style error input*/
+    border-color: #e63f2c;
+} 
+.form-input.success i.fa-check-circle {
+    visibility: visible;
+    color: #3ac041;
+}
+.form-input.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: #e63f2c;
+}
+/* */
 .form-input i { /* icons */
     position: absolute;
-    top:  30px;
+    top:  35px;
     right: 10px;
     visibility: hidden;
 }
@@ -58,4 +77,37 @@ body{
     bottom: 0;
     left: 0;
     visibility: hidden;
+}
+/* */
+.form-input.error small{ /*error message*/
+    visibility: visible;
+    color: #e63f2c;
+}
+/* */
+.form-cont button{
+    background: linear-gradient(to right, teal, rgb(70, 199, 199));
+    color: #f0f0f0;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 5em;
+    width: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-shadow:rgba(0, 0, 0, 0.30) 0 -1.25px 0;
+}
+.form-cont button:hover{
+    background: linear-gradient(to right, rgb(70, 199, 199), teal);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+#forgot-pass{
+    margin-top:10px;
+    text-align: center;
+}
+#forgot-pass a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
 }
